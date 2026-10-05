@@ -1,0 +1,61 @@
+{
+  "advertisers": 6749,
+  "scam_share": 0.053,
+  "test_accounts": 2066,
+  "rules_baseline": {
+    "precision": 0.96,
+    "recall": 0.614,
+    "legit_blocked_per_1000": 2.1
+  },
+  "gradient_boosting": {
+    "precision": 0.979,
+    "recall": 0.867,
+    "legit_blocked_per_1000": 1.6
+  },
+  "model_pr_auc": 0.985,
+  "top_features": {
+    "first_week_share": 0.582,
+    "avg_domain_age": 0.166,
+    "accounts_on_card": 0.121,
+    "active_days": 0.037,
+    "reports_per_ad": 0.028
+  },
+  "flag_rate_by_segment": [
+    {
+      "segment": "agency_client",
+      "accounts": 124,
+      "rules_flag_rate": 0.0,
+      "model_flag_rate": 0.016
+    },
+    {
+      "segment": "burst_ring",
+      "accounts": 94,
+      "rules_flag_rate": 0.947,
+      "model_flag_rate": 1.0
+    },
+    {
+      "segment": "new_business",
+      "accounts": 209,
+      "rules_flag_rate": 0.014,
+      "model_flag_rate": 0.005
+    },
+    {
+      "segment": "regular",
+      "accounts": 1575,
+      "rules_flag_rate": 0.001,
+      "model_flag_rate": 0.0
+    },
+    {
+      "segment": "sleeper_ring",
+      "accounts": 36,
+      "rules_flag_rate": 0.0,
+      "model_flag_rate": 0.583
+    },
+    {
+      "segment": "solo_scam",
+      "accounts": 28,
+      "rules_flag_rate": 0.286,
+      "model_flag_rate": 0.786
+    }
+  ]
+}
